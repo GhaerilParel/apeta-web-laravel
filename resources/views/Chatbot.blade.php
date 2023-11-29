@@ -1,6 +1,11 @@
 @extends('templating.layout')
 @section('title', 'Organik chatbot')
 @section('content')
+@php 
+
+session_start();
+
+@endphp
 <body>
 <div class="preloader">
         <img class="preloader__image" width="55" src="{{asset('assets/images/loader.png')}}" alt="" />
@@ -58,10 +63,6 @@
                             </ul>
                         @else
                             <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
-                            <ul class="dropdown-content">
-                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
-                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
-                            </ul>
                         @endif
 						</li>
 					</ul>
@@ -95,12 +96,10 @@
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
         <section class="about_section layout_padding3" style="background-color: #FFFFFF;">
-    <h1>Diagnosis Tanaman Buah</h1>
+    <h1>ChatBot APETA</h1>
     <div class="container">
       <p style="text-align: justify;">
-        Fruitnity membantu anda mencari solusi terkait penyakit yang menyerang tanaman buah anda sesuai dengan ciri-ciri
-        penyakit dan kondisi tanaman buah anda. Silakan berikan informasi lebih lanjut, dan kami akan memberikan
-        rekomendasi obat yang tepat untuk tanaman buah anda.
+        Chatbot ini membantu anda dalam mencari hasil ternak sesuai pengalaman user dengan sanga efisien dan efektif.
       </p>
       <div class="row" style="justify-content: center; align-items: center;">
         <div class="col-md-6 col-lg-7" style="padding-bottom: 15px;">

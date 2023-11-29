@@ -63,10 +63,6 @@ session_start();
                             </ul>
                         @else
                             <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
-                            <ul class="dropdown-content">
-                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
-                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
-                            </ul>
                         @endif
                         </li>
                     </ul>

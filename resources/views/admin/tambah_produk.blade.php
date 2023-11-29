@@ -265,7 +265,7 @@ if(empty($_SESSION['email_toko'])){
                             alamat_toko: $('#alamat_toko').val(),
                         },
                         success: function () {
-                            window.location.href = '/data_produk';
+                            window.location.href = '/admin/data_produk';
                         },
                         error: function (err) {
                             console.log(err);

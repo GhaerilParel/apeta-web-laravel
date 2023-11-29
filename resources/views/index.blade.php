@@ -63,10 +63,6 @@ session_start();
                             </ul>
                         @else
                             <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
-                            <ul class="dropdown-content">
-                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
-                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
-                            </ul>
                         @endif
                         </li>
                     </ul>
@@ -550,7 +546,7 @@ session_start();
     <link rel="stylesheet" href="{{ asset ('assets/css/style.css') }}">
     <!-- Tambahkan kode berikut di dalam <body> -->
     <div class="chat-launcher" id="chat-launcher">
-        <span class="chat-icon"><a href="/ChatBot">👋</a></span>
+        <span class="chat-icon"><a href="/chatbot">👋</a></span>
     </div>
     <div class="chat-container" id="chat-container">
 
