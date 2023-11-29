@@ -50,11 +50,19 @@
                 <div class="container">
                     <ul class="main-menu__list">
 						<li class="dropdown">
-							<a href="{{ route ('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
-							<ul class="dropdown-content">
-								<li><a href="{{ route ('Akunsaya') }}">Akun saya</a></li>
-								<li><a href="{{ route ('login4') }}">Logout</a></li>
-							</ul>
+                        @if(isset($_SESSION['email']))
+                            <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>{{ $_SESSION['email'] }}</a>
+                            <ul class="dropdown-content">
+                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
+                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
+                            </ul>
+                        @else
+                            <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
+                            <ul class="dropdown-content">
+                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
+                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
+                            </ul>
+                        @endif
 						</li>
 					</ul>
                     <ul class="main-menu__list">
@@ -86,16 +94,82 @@
         <div class="stricky-header stricked-menu main-menu">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
+        <section class="about_section layout_padding3" style="background-color: #FFFFFF;">
+    <h1>Diagnosis Tanaman Buah</h1>
+    <div class="container">
+      <p style="text-align: justify;">
+        Fruitnity membantu anda mencari solusi terkait penyakit yang menyerang tanaman buah anda sesuai dengan ciri-ciri
+        penyakit dan kondisi tanaman buah anda. Silakan berikan informasi lebih lanjut, dan kami akan memberikan
+        rekomendasi obat yang tepat untuk tanaman buah anda.
+      </p>
+      <div class="row" style="justify-content: center; align-items: center;">
+        <div class="col-md-6 col-lg-7" style="padding-bottom: 15px;">
+          <div class="img-box" style="display: flex; justify-content: center; align-items: center;">
+            <img src="images/ilustrasi-23.png" style="width: 55%;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <div class="detail-box">
+            <form id="chat-form">
+              <div class="form-group">
+                <select name="jenis_ternak" class="form-control" id="jenis_ternak">
+                  <option value="" disabled selected>Jenis Ternak Apa yang ingin Kamu Tanyakan?</option>
+                  <option value="Sapi">Sapi</option>
+                  <option value="Kambing">Kambing</option>
+                  <option value="Ayam">Ayam</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <select name="hasil_ternak" class="form-control" id="hasil_ternak">
+                  <option value="" disabled selected>Hasil Ternak Apa yang ingin ditanyakan?</option>
+                  <!-- Diambil dari diagnosis.js -->
+                </select>
+              </div>
+
+              <div class="form-group">
+                <select name="" class="form-control" id="">
+                  <option value="" disabled selected>Hal Apa yang ingin Kamu tanyakan?</option>
+                  <option value="Gizi">Gizi</option>
+                  <option value="Fresh">Fresh</option>
+                  <option value="Sehat">Sehat</option>
+                </select>
+              </div>
+              
 
 
+              <button id="submit-button" type="submit" style="width: 250px;">
+                <div id="loading" style="display: none;">
+                  <img src="images/loading-3.gif" style="width: 30px; height: 30px;" alt="Loading..." />
+                </div>
+                <div id="logo-text-analisis" style="display: none;">
+                  <i class="fa fa-stethoscope" style="font-size: 20px;"></i>
+                  Tanyakan
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
 
+      <div class="hasil-diagnosis" style="text-align: justify;" id="hasil-diagnosis">
+        <h1 style="text-align: left;">Hasil Jawaban</h1>
 
+        <div id="isi-diagnosis">
+          <p style="display:none; color: #bebebe; font-weight: bold;" id="p-diagnosis">
+            Hasil akan tampil disini.
+          </p>
+          <!-- ISI DARI HASIL CHATGPT -->
+        </div>
 
+        <div class="cr-gpt">
+          Hasil Berdasarkan Data dari <b>OpenAI - GPT 3.5</b>
+        </div>
+      </div>
 
+    </div>
+  </section>
         
-
-
-
         <script src="{{asset('assets/js/script.js')}}"></script>
 
         <footer class="site-footer background-black-2">
@@ -328,8 +402,14 @@
     <script src="script.js"></script>
     <!-- template js -->
     <script src="{{ asset('assets/js/organik.js') }}"></script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{ asset('assets/js/chatbot.js') }}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="assets/js/diagnosis.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
 
     <!-- Skrip JavaScript untuk menginisialisasi peta -->
     <script>

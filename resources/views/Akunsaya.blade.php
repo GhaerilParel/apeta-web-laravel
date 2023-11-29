@@ -181,14 +181,19 @@ session_start();
                 <div class="container">
                     <ul class="main-menu__list">
                         <li class="dropdown">
-                            
-                                <a href="{{ route ('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
-                                <?php if(isset($_SESSION['email'])) : ?>
-                                <ul class="dropdown-content">
-                                    <li><a href="{{ route ('akunsaya') }}">Akun saya</a></li>
-                                    <li><a href="{{ route ('signout-user') }}">Logout</a></li>
-                                </ul>
-                            <?php endif; ?>
+                        @if(isset($_SESSION['email']))
+                            <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>{{ $_SESSION['email'] }}</a>
+                            <ul class="dropdown-content">
+                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
+                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
+                            </ul>
+                        @else
+                            <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
+                            <ul class="dropdown-content">
+                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
+                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
+                            </ul>
+                        @endif
                         </li>
                     </ul>
                     

@@ -42,7 +42,7 @@
                             <input class="form-control" type="text" name="alamat" id="alamat" placeholder="Alamat" required>
                             <input class="form-control" type="password" name="password" id="password" placeholder="Password" required>
                             <div class="form-button">
-                            <button id="submit" type="submit" class="ibtn"">Register</button>
+                            <button id="submit" type="submit" class="ibtn">Register</button>
                             </div>
                         </form>
                         <div class="other-links">

@@ -105,6 +105,15 @@ Route::prefix('/')->group(function () {
     Route::get('/admin/admin_login', function() {
         return view('admin/admin_login');
     });
+    Route::get('/admin/data_produk', function() {
+        return view('admin/data_produk');
+    });
+    Route::get('/admin/tambah_produk', function() {
+        return view('admin/tambah_produk');
+    });
+    Route::get('/admin/signout-admin', function() {
+        return view('admin/admin_signout');
+    });
 
 
     // LOGIN USER
@@ -147,6 +156,10 @@ Route::prefix('/')->group(function () {
         return view('admin/tambah-produk-admin');
     })->name('tambah-produk-admin');
 
+    Route::get('/signin_admin', function () {
+        return view('/admin/signin_admin');
+    })->name('signin_admin');
+
     // CONTROL ADMIN
     Route::post('/update-produk', [App\Http\Controllers\AdminController::class, 'updateProduk'])
     ->name('update-produk');
@@ -157,6 +170,9 @@ Route::prefix('/')->group(function () {
     ->name('update-user-admin');
     Route::get('/delete-user/{id}', [App\Http\Controllers\AdminController::class, 'deleteUser'])
     ->name('delete-user');
+
+    Route::post('/register-mitra', [App\Http\Controllers\AdminController::class, 'registerMitra'])
+    ->name('register-mitra');
 
 
 });

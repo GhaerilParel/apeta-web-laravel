@@ -31,6 +31,14 @@
     <link rel="stylesheet" href="{{ asset ('assets/vendors/swiper/swiper.min.css') }}" />
     <link rel="stylesheet" href="{{ asset ('assets/vendors/tiny-slider/tiny-slider.min.css') }}" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css') }}" />
+    <link href="{{ asset('assets/css/style2.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- template styles -->
     <link rel="stylesheet" href="{{ asset('assets/css/organik.css') }}">

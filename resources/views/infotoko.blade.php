@@ -95,14 +95,19 @@
                 <div class="container">
                     <ul class="main-menu__list">
                         <li class="dropdown">
-                            
-                                <a href="{{ route ('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
-                                <?php if(isset($_SESSION['email'])) : ?>
-                                <ul class="dropdown-content">
-                                    <li><a href="{{ route ('akunsaya') }}">Akun saya</a></li>
-                                    <li><a href="{{ route ('signout-user') }}">Logout</a></li>
-                                </ul>
-                            <?php endif; ?>
+                        @if(isset($_SESSION['email']))
+                            <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>{{ $_SESSION['email'] }}</a>
+                            <ul class="dropdown-content">
+                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
+                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
+                            </ul>
+                        @else
+                            <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
+                            <ul class="dropdown-content">
+                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
+                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
+                            </ul>
+                        @endif
                         </li>
                     </ul>
                     
@@ -135,90 +140,34 @@
         </section><!-- /.contact-infos -->
         <div class="kolom">
             <h2>Formulir Pendaftaran</h2>
-            <form action="proses-pendaftaran.php" method="post">
+            <form action="/register-mitra" method="post">
+                @csrf
               </div>
               <div class="form-group">
                 <label for="nama">Nama Toko</label>
-                <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Toko Anda" required>
+                <input type="text" name="nama_toko" id="nama_toko" placeholder="Masukkan Nama Toko Anda" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Masukkan Password Anda" required>
               </div>
               <div class="form-group">
                 <label for="email">Alamat Email</label>
-                <input type="email" name="email" id="email" placeholder="Masukkan alamat email Anda yang valid" required>
+                <input type="email" name="email_toko" id="email_toko" placeholder="Masukkan alamat email Anda yang valid" required>
               </div>
-        
-              
-        </div>
-        
-              
-        <div
-         
-        class="form-group">
-        
-                
-        <label
-         
-        for="jenis_kelamin">Daftar Sebagai</label>
-        
-                
-        <select
-         
-        name="Daftar sebagai"
-         
-        id="Daftar"
-         
-        required>
-        
-                  
-        <option
-         
-        value="Owner">Owner</option>
-        
-                  
-        <option
-         
-        value="Dropshiper">Dropshiper</option>
-        
-                
-        </select>
-        
-              
-        </div>
-        
-              
-        <div
-         
-        class="form-group">
-        
-                
-        <label
+              <div class="form-group">
+                <label for="no_tlpn">No Telepon</label>
+                <input type="number" name="no_tlpn" id="no_tlpn" placeholder="Masukkan No Telepon Anda" required>
               </div>
               <div class="form-group">
                 <label for="alamat">Alamat</label>
-                <textarea name="alamat" id="alamat" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+                <textarea name="alamat_toko" id="alamat_toko" placeholder="Masukkan alamat lengkap Anda" required></textarea>
               </div>
               <div class="form-group">
-                <label for="kota">Kota</label>
-                <input type="text" name="kota" id="kota" placeholder="Masukkan nama kota Anda" required>
-              </div>
-              <div class="form-group">
-                <label for="provinsi">Provinsi</label>
-                <input type="text" name="provinsi" id="provinsi" placeholder="Masukkan nama provinsi Anda" required>
-              </div>
-              <div class="form-group">
-                <form action=".htm" methoindexd="post">
-                    <input type="button" value="Simpan" class="btn btn-primary">
-                  </form>
-                  
-              </div>
+                    <button type="submit" id="submit" class="btn btn-primary">Simpan</button>
+                </div>
             </form>
-          </div>
-
-
-
-
-
-
-
+        </div>
 
 
         <footer class="site-footer background-black-2">
