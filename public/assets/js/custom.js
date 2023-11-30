@@ -1,30 +1,3 @@
-//service section owl carousel
-$(".fruits_owl-carousel").owlCarousel({
-    loop: true,
-    margin: 20,
-    autoHeight: true,
-    nav: true,
-    navText: [
-        '<i class="fa fa-long-arrow-left" aria-hidden="true"></i>',
-        '<i class="fa fa-long-arrow-right" aria-hidden="true"></i>',
-    ],
-    responsive: {
-        0: {
-            items: 1,
-        },
-        576: {
-            items: 2,
-        },
-        768: {
-            items: 3,
-        },
-        991: {
-            items: 4,
-        },
-    },
-});
-
-
 // Search Produk
 document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("search-input");
@@ -45,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let anyResults = false;
       
         produkContainers.forEach(function (produkContainer) {
-          const productName = produkContainer.querySelector("h4").textContent.toLowerCase();
+          const productName = produkContainer.querySelector("h3").textContent.toLowerCase();
           console.log("Product Name:", productName);
       
           if (productName.includes(searchTerm)) {

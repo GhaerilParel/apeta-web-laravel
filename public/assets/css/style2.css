@@ -111,14 +111,14 @@ a:focus {
 }
 
 .navbar-brand {
-  color: #7FC334;
+  color: #60be74;
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
 }
 
 .navbar-brand:hover{
-  color: #7FC334;
+  color: #60be74;
 }
 
 .custom_nav-container {
@@ -152,7 +152,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-  color: #7FC334;
+  color: #60be74;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link svg {
@@ -290,7 +290,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #7FC334;
+  color: #60be74;
 }
 
 .slider_section .detail-box p {
@@ -312,18 +312,18 @@ a:focus {
   align-items: center;
   gap: 10px;
   padding: 10px 55px;
-  background-color: #7FC334;
+  background-color: #60be74;
   color: #ffffff;
   border-radius: 50px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #7FC334;
+  border: 1px solid #60be74;
   text-transform: uppercase;
 }
 
 .slider_section .detail-box .btn-box a:hover {
   background-color: transparent;
-  color: #7FC334;
+  color: #60be74;
 }
 
 .slider_section .img-box{
@@ -382,12 +382,12 @@ a:focus {
 }
 
 .about_section h1 span{
-  color: #7FC334;
+  color: #60be74;
 }
 
 .about_section p span{
   font-weight: bold;
-  color: #7FC334;
+  color: #60be74;
 }
 
 .about_section .detail-box p{
@@ -411,18 +411,18 @@ a:focus {
 .about_section form button {
   display: inline-block;
   padding: 10px 55px;
-  background-color: #7FC334;
+  background-color: #60be74;
   color: #ffffff;
   border-radius: 50px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #7FC334;
+  border: 1px solid #60be74;
   text-transform: uppercase;
 }
 
 .about_section form button:hover {
   background-color: transparent;
-  color: #7FC334;
+  color: #60be74;
 }
 
 .about_section form button:focus {
@@ -436,7 +436,7 @@ a:focus {
 
 .about_section form .form-control:focus {
   outline: none;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
   box-shadow: none
 }
 
@@ -445,9 +445,9 @@ a:focus {
 }
 
 .hasil-diagnosis #isi-diagnosis{
-  border-left: 1px solid #7FC334;
-  border-right: 1px solid #7FC334;
-  border-top: 1px solid #7FC334;
+  border-left: 1px solid #60be74;
+  border-right: 1px solid #60be74;
+  border-top: 1px solid #60be74;
 }
 
 .fruits_section {
@@ -460,7 +460,7 @@ a:focus {
 .fruits_section .box {
   text-align: center;
   border-radius: 15px;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
   height: 420px;
 }
 
@@ -481,7 +481,7 @@ a:focus {
   background: #ffffff;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  border-bottom: 2px solid #7FC334;
+  border-bottom: 2px solid #60be74;
   height: 275px;
   padding: 45px 25px;
 }
@@ -504,7 +504,7 @@ a:focus {
 .fruits_section .box .detail-box .new_price {
   font-weight: 600;
   font-size: 1.5em;
-  color: #7FC334;
+  color: #60be74;
 }
 
 .fruits_section .box .detail-box .old_price {
@@ -521,17 +521,17 @@ a:focus {
   display: inline-block;
   padding: 5px 25px;
   background-color: #ffffff;
-  color: #7FC334;
+  color: #60be74;
   border-radius: 10px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .fruits_section .box .detail-box a:hover {
-  background-color: #7FC334;
+  background-color: #60be74;
   color: #ffffff;
 }
 
@@ -548,18 +548,18 @@ a:focus {
 .fruits_section .btn-box a {
   display: inline-block;
   padding: 10px 60px;
-  background-color: #7FC334;
+  background-color: #60be74;
   color: #ffffff;
   border-radius: 50px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #7FC334;
+  border: 1px solid #60be74;
   text-transform: uppercase;
 }
 
 .fruits_section .btn-box a:hover {
   background-color: transparent;
-  color: #7FC334;
+  color: #60be74;
 }
 
 .fruits_section .owl-carousel {
@@ -588,7 +588,7 @@ a:focus {
   background-size: 15px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #7FC334;
+  background-color: #60be74;
   color: #ffffff;
   font-size: 20px;
   -webkit-transition: all .3s;
@@ -598,8 +598,8 @@ a:focus {
 .fruits_section .owl-carousel .owl-nav button.owl-next:hover,
 .fruits_section .owl-carousel .owl-nav button.owl-prev:hover {
   background-color: #ffffff;
-  color: #7FC334;
-  border: 1px solid #7FC334;
+  color: #60be74;
+  border: 1px solid #60be74;
 }
 
 .fruits_section .owl-carousel .owl-nav button.owl-prev {
@@ -630,30 +630,30 @@ a:focus {
 
 .fruits_section .search-container input:focus{
   outline: none;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
 }
 
 .fruits_section .search-container button{
   border: none;
   padding: 10px 20px;
-  background-color: #7FC334;
+  background-color: #60be74;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   -webkit-transition: all .3s;
   transition: all .3s;
   color: white;
-  border: 1px solid #7FC334;
+  border: 1px solid #60be74;
 }
 
 .fruits_section .search-container button:hover{
   background-color: transparent;
-  color: #7FC334;
-  border: 1px solid #7FC334;
+  color: #60be74;
+  border: 1px solid #60be74;
 }
 
 .fruits_section .search-container button:focus{
   outline: none;
-  border: 1px solid #7FC334;
+  border: 1px solid #60be74;
 }
 
 
@@ -742,7 +742,7 @@ a:focus {
 }
 
 .info_section .info_link-box a:hover {
-  color: #7FC334;
+  color: #60be74;
 }
 
 .info_section .info_link-box a i {
@@ -769,7 +769,7 @@ a:focus {
 }
 
 .info_section .tautan-cepat a:hover {
-  color: #7FC334;
+  color: #60be74;
 }
 
 /* end info section */
@@ -784,7 +784,7 @@ a:focus {
 }
 
 .cr-gpt{
-  background-color: #7FC334;
+  background-color: #60be74;
   padding: 20px 40px;
   border: none;
   color: white;
@@ -795,7 +795,7 @@ a:focus {
 
 .detail-produk .img-box{
   background-color: #ffffff;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -822,25 +822,25 @@ a:focus {
 }
 
 .about_section .detail-obat h2{
-  color: #7FC334;
+  color: #60be74;
 }
 
 .about_section .detail-obat a {
   display: inline-block;
   padding: 5px 25px;
   background-color: #ffffff;
-  color: #7FC334;
+  color: #60be74;
   border-radius: 10px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .about_section .detail-obat a:hover {
   color: #ffffff;
-  background-color: #7FC334;
+  background-color: #60be74;
 }
 
 .about_section .detail-obat p{
@@ -856,12 +856,12 @@ a:focus {
   transition: all .3s;
   border-radius: 10px;
   float: right;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
 }
 
 .total-obat input[type=number]:focus{
   outline: none;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
 }
 
 .detail-produk input[type="number"]::-webkit-inner-spin-button,
@@ -880,13 +880,13 @@ input[type="number"]::-webkit-outer-spin-button {
   transition: all .3s;
   border-radius: 10px;
   color: #495057;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
   background-color: white;
 }
 
 .metode-pembayaran:focus{
   outline: none;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
 }
 
 .login-signup{
@@ -899,14 +899,14 @@ input[type="number"]::-webkit-outer-spin-button {
 .login-signup .login{
   padding: 9px 30px;
   width: 120px;
-  border-top: 1px solid #7FC334;
-  border-left: 1px solid #7FC334;
-  border-right: 1px solid #7FC334;
-  border-bottom: 1px solid #7FC334;
+  border-top: 1px solid #60be74;
+  border-left: 1px solid #60be74;
+  border-right: 1px solid #60be74;
+  border-bottom: 1px solid #60be74;
   text-decoration: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  color: #7FC334;
+  color: #60be74;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -914,23 +914,23 @@ input[type="number"]::-webkit-outer-spin-button {
 .login-signup .signup{
   padding: 9px 30px;
   width: 120px;
-  border-top: 1px solid #7FC334;
-  border-right: 1px solid #7FC334;
-  border-bottom: 1px solid #7FC334;
+  border-top: 1px solid #60be74;
+  border-right: 1px solid #60be74;
+  border-bottom: 1px solid #60be74;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  color: #7FC334;
+  color: #60be74;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 .login-signup .login:hover{
-  background-color: #7FC334;
+  background-color: #60be74;
   color: #FFFFFF;
 }
 
 .login-signup .signup:hover{
-  background-color: #7FC334;
+  background-color: #60be74;
   color: #FFFFFF;
 }
 
@@ -951,7 +951,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .login-box .box-atas{
-  background-color: #7FC334;
+  background-color: #60be74;
   border: none;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -975,7 +975,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .login-box .box-bawah input[type=text], input[type=password], input[type=number]{
   padding: 10px 20px;
   width: 30%;
-  border: 1px solid #7FC334;
+  border: 1px solid #60be74;
   border-radius: 20px;
 }
 
@@ -992,7 +992,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .login-box .box-bawah a{
-  color: #7FC334;
+  color: #60be74;
 }
 
 .login-box .box-bawah a:hover{
@@ -1000,7 +1000,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .login-box{
-  border: 1px solid #7FC334;
+  border: 1px solid #60be74;
 }
 
 .account-page #signout{
@@ -1024,19 +1024,19 @@ input[type="number"]::-webkit-outer-spin-button {
 .account-page #edit{
   display: inline-block;
   padding: 10px 55px;
-  background-color: #7FC334;
+  background-color: #60be74;
   color: #ffffff;
   border-radius: 50px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #7FC334;
+  border: 1px solid #60be74;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .account-page #edit:hover{
   background-color: transparent;
-  color: #7FC334;
+  color: #60be74;
 }
 
 .akun{
@@ -1046,7 +1046,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .akun a{
-  background-color: #7FC334;
+  background-color: #60be74;
   padding: 10px;
   border-radius: 50px;
   cursor: pointer;
@@ -1098,17 +1098,17 @@ input[type="number"]::-webkit-outer-spin-button {
   display: inline-block;
   padding: 5px 25px;
   background-color: #ffffff;
-  color: #7FC334;
+  color: #60be74;
   border-radius: 10px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 2px solid #7FC334;
+  border: 2px solid #60be74;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .modal button[type='submit']:hover{
-  background-color: #7FC334;
+  background-color: #60be74;
   color: #ffffff;
 }
 

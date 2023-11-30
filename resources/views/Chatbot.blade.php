@@ -43,10 +43,6 @@ session_start();
                             <i class="organik-icon-calling"></i>
                             <p>Phone <a href="tel:+92-666-888-0000">+628 9898 7543</a></p>
                         </div><!-- /.topbar__info -->
-                        <div class="topbar__buttons">
-                            <a href="#" class="search-toggler"><i class="organik-icon-magnifying-glass"></i></a>
-                            <a href="#" class="mini-cart__toggler"><i class="organik-icon-shopping-cart"></i></a>
-                        </div><!-- /.topbar__buttons -->
                     </div><!-- /.topbar__left -->
 
                 </div><!-- /.container -->
@@ -54,7 +50,7 @@ session_start();
             <nav class="main-menu">
                 <div class="container">
                     <ul class="main-menu__list">
-						<li class="dropdown">
+                        <li class="dropdown">
                         @if(isset($_SESSION['email']))
                             <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>{{ $_SESSION['email'] }}</a>
                             <ul class="dropdown-content">
@@ -64,27 +60,18 @@ session_start();
                         @else
                             <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
                         @endif
-						</li>
-					</ul>
+                        </li>
+                    </ul>
+                    
                     <ul class="main-menu__list">
                         <li class="dropdown">
-                            <a href="{{ route ('index') }}">Home</a>
+                        <a href="{{ route('index') }}">Home</a>
                         </li>
                         <li class="dropdown">
-                            <a href="{{ route ('product') }}">Shop</a>
-                            <ul>
-                                <li><a href="{{ route ('product') }}">Shop</a></li>
-                                <li><a href="{{ route ('product-details') }}">Product Details</a></li>
-                                <li><a href="{{ route ('cart') }}">Cart Page</a></li>
-                                <li><a href="{{ route ('checkout') }}">Checkout</a></li>
-                            </ul>
+                            <a href="/product">Shop</a>
                         </li>
                         <li class="dropdown">
-                            <a href="{{ route ('contact') }}">Komunitas</a>
-                            <ul>
-                                <li><a href="{{ route ('daftarmitra') }}"> Daftar ke Mitra</a></li>
-                                <li><a href="{{ route ('contact') }}"> Contact</a></li>
-                            </ul>
+                            <a href="{{ route('daftarmitra') }}">Daftar ke Mitra</a>
                         </li>
                     </ul>
                 </div><!-- /.container -->

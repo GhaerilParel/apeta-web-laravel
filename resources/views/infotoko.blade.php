@@ -1,6 +1,11 @@
 @extends('templating.layout')
 @section('title', 'Organik infotoko')
 @section('content')
+@php 
+
+session_start();
+
+@endphp
 <body>
     <style>
 
@@ -56,7 +61,7 @@
             <div class="topbar">
                 <div class="container">
                     <div class="main-logo">
-                        <a href="{{ route ('index') }}" clasindexs="logo">
+                        <a href="{{ route ('index') }}" class="logo">
                             <img src="{{asset('assets/images/logo-dark.png')}}" width="105" alt="">
                         </a>
                         <div class="mobile-nav__buttons">
@@ -83,10 +88,6 @@
                             <i class="organik-icon-calling"></i>
                             <p>Phone <a href="tel:+92-666-888-0000">+628 9898 7543</a></p>
                         </div><!-- /.topbar__info -->
-                        <div class="topbar__buttons">
-                            <a href="#" class="search-toggler"><i class="organik-icon-magnifying-glass"></i></a>
-                            <a href="#" class="mini-cart__toggler"><i class="organik-icon-shopping-cart"></i></a>
-                        </div><!-- /.topbar__buttons -->
                     </div><!-- /.topbar__left -->
 
                 </div><!-- /.container -->
@@ -113,17 +114,9 @@
                         </li>
                         <li class="dropdown">
                             <a href="/product">Shop</a>
-                            <ul>
-                                <li><a href="/product">Shop</a></li>
-                            </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="/contact">Komunitas</a>
-                            <ul>
-                            <li><a href="{{ route('daftarmitra') }}"> Daftar ke Mitra</a></li>
-
-                                <li><a href="/contact"> Contact</a></li>
-                            </ul>
+                            <a href="{{ route('daftarmitra') }}">Daftar ke Mitra</a>
                         </li>
                     </ul>
                 </div><!-- /.container -->

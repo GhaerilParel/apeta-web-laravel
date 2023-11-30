@@ -43,10 +43,6 @@ session_start();
                             <i class="organik-icon-calling"></i>
                             <p>Phone <a href="tel:+92-666-888-0000">+628 9898 7543</a></p>
                         </div><!-- /.topbar__info -->
-                        <div class="topbar__buttons">
-                            <a href="#" class="search-toggler"><i class="organik-icon-magnifying-glass"></i></a>
-                            <a href="#" class="mini-cart__toggler"><i class="organik-icon-shopping-cart"></i></a>
-                        </div><!-- /.topbar__buttons -->
                     </div><!-- /.topbar__left -->
 
                 </div><!-- /.container -->
@@ -73,17 +69,9 @@ session_start();
                         </li>
                         <li class="dropdown">
                             <a href="/product">Shop</a>
-                            <ul>
-                                <li><a href="/product">Shop</a></li>
-                            </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="/contact">Komunitas</a>
-                            <ul>
-                            <li><a href="{{ route('daftarmitra') }}"> Daftar ke Mitra</a></li>
-
-                                <li><a href="/contact"> Contact</a></li>
-                            </ul>
+                            <a href="{{ route('daftarmitra') }}">Daftar ke Mitra</a>
                         </li>
                     </ul>
                 </div><!-- /.container -->
@@ -172,7 +160,7 @@ session_start();
                                     </div>
                                     
                                     <div class="product-card__left">
-                                        <h3><a href="#'.$modalId.'" class="open-modal" data-custom-action="Beli">'.$row->nama_produk.'</a></h3>
+                                        <h3><a href="#'.$modalId.'" class="open-modal produk" data-custom-action="Beli">'.$row->nama_produk.'</a></h3>
                                         <p>'.$formattedHargaProduk.'</p>
                                     </div>
                                     <div class="product-card__right">

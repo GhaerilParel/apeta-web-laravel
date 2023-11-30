@@ -133,8 +133,8 @@ session_start();
     }
 </style>
 
-    <div class="preloader">
-        <img class="preloader__image" width="55" src="{{asset('assets/assets/images/loader.png')}}" alt="" />
+<div class="preloader">
+        <img class="preloader__image" width="55" src="{{asset('assets/images/loader.png')}}" alt="" />
     </div>
     <!-- /.preloader -->
     <div class="page-wrapper">
@@ -142,8 +142,8 @@ session_start();
             <div class="topbar">
                 <div class="container">
                     <div class="main-logo">
-                    <a href="{{ route('index') }}" class="logo">
-                            <img src="{{asset('assets/assets/images/logo-dark.png')}}" width="105" alt="">
+                        <a href="{{ route ('index') }}" class="logo">
+                            <img src="{{asset('assets/images/logo-dark.png')}}" width="105" alt="">
                         </a>
                         <div class="mobile-nav__buttons">
                             <a href="#" class="search-toggler"><i class="organik-icon-magnifying-glass"></i></a>
@@ -169,10 +169,6 @@ session_start();
                             <i class="organik-icon-calling"></i>
                             <p>Phone <a href="tel:+92-666-888-0000">+628 9898 7543</a></p>
                         </div><!-- /.topbar__info -->
-                        <div class="topbar__buttons">
-                            <a href="#" class="search-toggler"><i class="organik-icon-magnifying-glass"></i></a>
-                            <a href="#" class="mini-cart__toggler"><i class="organik-icon-shopping-cart"></i></a>
-                        </div><!-- /.topbar__buttons -->
                     </div><!-- /.topbar__left -->
 
                 </div><!-- /.container -->
@@ -189,10 +185,6 @@ session_start();
                             </ul>
                         @else
                             <a href="{{ route('login4') }}"><i class="organik-icon-user"></i>Login / Register</a>
-                            <ul class="dropdown-content">
-                                <li><a href="{{ route('akunsaya') }}">Akun saya</a></li>
-                                <li><a href="{{ route('signout-user') }}">Logout</a></li>
-                            </ul>
                         @endif
                         </li>
                     </ul>
@@ -203,20 +195,9 @@ session_start();
                         </li>
                         <li class="dropdown">
                             <a href="/product">Shop</a>
-                            <ul>
-                                <li><a href="/product">Shop</a></li>
-                                <li><a href="/product-details">Product Details</a></li>
-                                <li><a href="/cart">Cart Page</a></li>
-                                <li><a href="{{ route('checkout') }}">Checkout</a>
-                            </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="/contact">Komunitas</a>
-                            <ul>
-                            <li><a href="{{ route('daftarmitra') }}"> Daftar ke Mitra</a></li>
-
-                                <li><a href="/contact"> Contact</a></li>
-                            </ul>
+                            <a href="{{ route('daftarmitra') }}">Daftar ke Mitra</a>
                         </li>
                     </ul>
                 </div><!-- /.container -->

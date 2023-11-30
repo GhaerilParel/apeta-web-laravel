@@ -5985,7 +5985,7 @@ div.card {
 .product-sidebar__search-widget form input[type=text] {
   width: 100%;
   border: none;
-  background-color: var(--thm-base);
+  background-color: grey;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
